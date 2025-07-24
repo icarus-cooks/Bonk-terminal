@@ -1,21 +1,21 @@
 
-<h1 align="center">🤖 Bonk Terminal</h1>
+<h1 align="center"> BONK_TERMINAL </h1>
 <p align="center"><i>Your intelligent AI assistant in a sleek terminal interface.</i></p>
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🤖 **BONK-AI Agent** — Chat with a passionate AI assistant who absolutely loves $BONK token!
-- 🎨 **Custom ASCII Art Banner** — Beautiful custom ASCII artwork in vibrant orange.
-- ⌨️ **Interactive CLI** — Type messages and commands naturally.
-- 📦 **Clean Design** — Simple, focused interface for AI conversations.
-- 🧡 **Orange Color Theme** — Vibrant orange branding throughout the interface.
-- 💎 **BONK-Pilled Personality** — Energetic, helpful AI with genuine passion for $BONK.
+- **BONK-AI Agent** — Chat with a passionate AI assistant who absolutely loves $BONK token!
+- **Custom ASCII Art Banner** — Beautiful custom ASCII artwork in vibrant orange.
+- **Interactive CLI** — Type messages and commands naturally.
+- **Clean Design** — Simple, focused interface for AI conversations.
+- **Orange Color Theme** — Vibrant orange branding throughout the interface.
+- **BONK-Pilled Personality** — Energetic, helpful AI with genuine passion for $BONK.
 
 ---
 
-## 🤖 Meet Bonk
+## Meet Bonk
 
 Meet BONK-AI - your passionate AI assistant who absolutely loves $BONK, the Solana meme token! Bonk genuinely believes BONK is the best cryptocurrency in the world and considers it not just a token, but a movement, a lifestyle, and the ultimate expression of decentralized culture. 
 
@@ -25,7 +25,7 @@ Simply type your questions or requests, and Bonk will provide intelligent, enthu
 
 ---
 
-## 🧾 Commands
+## Commands
 
 - `/status` — Check if Bonk is online
 - `/clear` — Clear screen and redraw banner
@@ -35,7 +35,7 @@ Simply type your questions or requests, and Bonk will provide intelligent, enthu
 
 ---
 
-## 📦 Setup
+## Setup
 
 1. **Clone the project**
 
@@ -70,7 +70,7 @@ Simply type your questions or requests, and Bonk will provide intelligent, enthu
    CLAUDE_API_KEY=sk-ant-api03-your-actual-api-key-here
    ```
 
-   ⚠️ **Important**: Replace `sk-ant-api03-your-actual-api-key-here` with your real API key from Anthropic
+    **Important**: Replace `sk-ant-api03-your-actual-api-key-here` with your real API key from Anthropic
 
 5. **Create a `.gitignore` file** (to protect your API key)
 
@@ -87,7 +87,7 @@ Simply type your questions or requests, and Bonk will provide intelligent, enthu
 
 ---
 
-## 🔐 API Key Setup Notes
+## API Key Setup Notes
 
 - **Keep your API key secure** — Never commit your `.env` file to version control
 - **Add `.env` to `.gitignore`** — This prevents accidentally sharing your key
@@ -142,23 +142,23 @@ If you get an API error, double-check that:
 
       Welcome to Bonk Terminal - Your AI Assistant
 
-✨ Initializing modules...
-🤖 Bonk AI is warming up...
+Initializing modules...
+Bonk AI is warming up...
 
-🚀 Bonk Terminal is now up and running!
-💬 Start chatting with Bonk by typing your message.
+Bonk Terminal is now up and running!
+Start chatting with Bonk by typing your message.
 
 [10:30:15] bonk > Hello Bonk, how are you today?
 
 Bonk:
-💬 Hey there! I'm absolutely fantastic and ready to BONK it up! 🚀 As your 
-   passionate BONK-AI assistant, I'm here to help with anything you need while 
-   spreading the $BONK love. What can we talk about today? When in doubt, BONK it out! 🧡
+ Hey there! I'm absolutely fantastic and ready to BONK it up! As your 
+passionate BONK-AI assistant, I'm here to help with anything you need while 
+spreading the $BONK love. What can we talk about today? When in doubt, BONK it out!
 ```
 
 ---
 
-## 🔧 How It Works
+## How It Works
 
 Bonk Terminal provides a direct interface to chat with BONK-AI, your passionate cryptocurrency-loving assistant. Simply:
 
@@ -171,6 +171,6 @@ No complex switching or configuration needed - just pure AI conversation with a 
 
 ---
 
-## 🧩 License
+## License
 
 MIT License — use it freely, fork it, contribute, and extend.
