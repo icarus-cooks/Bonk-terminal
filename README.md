@@ -1,21 +1,25 @@
+<p align="center">
+  <img src="https://files.oaiusercontent.com/file-Kee7ap9SRmWnZdbnvPSDeb" alt="Bonk Terminal" width="600"/>
+</p>
 
-<h1 align="center"> BONK_TERMINAL </h1>
+<h1 align="center">🤖 Bonk Terminal</h1>
 <p align="center"><i>Your intelligent AI assistant in a sleek terminal interface.</i></p>
 
 ---
 
-## Features
+## 🚀 Features
 
-- **BONK-AI Agent** — Chat with a passionate AI assistant who absolutely loves $BONK token!
-- **Custom ASCII Art Banner** — Beautiful custom ASCII artwork in vibrant orange.
-- **Interactive CLI** — Type messages and commands naturally.
-- **Clean Design** — Simple, focused interface for AI conversations.
-- **Orange Color Theme** — Vibrant orange branding throughout the interface.
-- **BONK-Pilled Personality** — Energetic, helpful AI with genuine passion for $BONK.
+- 🤖 **BONK-AI Agent** — Chat with a passionate AI assistant who absolutely loves $BONK token!
+- 🎨 **ASCII Art Banner** — Beautiful text-based banner in vibrant orange.
+- 🐕 **BONK Dog Command** — Type `/bonk` to display awesome ASCII dog art!
+- ⌨️ **Interactive CLI** — Type messages and commands naturally.
+- 📦 **Clean Design** — Simple, focused interface for AI conversations.
+- 🧡 **Orange Color Theme** — Vibrant orange branding throughout the interface.
+- 💎 **BONK-Pilled Personality** — Energetic, helpful AI with genuine passion for $BONK.
 
 ---
 
-## Meet Bonk
+## 🤖 Meet Bonk
 
 Meet BONK-AI - your passionate AI assistant who absolutely loves $BONK, the Solana meme token! Bonk genuinely believes BONK is the best cryptocurrency in the world and considers it not just a token, but a movement, a lifestyle, and the ultimate expression of decentralized culture. 
 
@@ -25,17 +29,18 @@ Simply type your questions or requests, and Bonk will provide intelligent, enthu
 
 ---
 
-## Commands
+## 🧾 Commands
 
 - `/status` — Check if Bonk is online
 - `/clear` — Clear screen and redraw banner
+- `/bonk` — Display awesome BONK dog ASCII art 🐕
 - `/exit` — Quit the terminal
 
 **Just type your message to start chatting with Bonk!**
 
 ---
 
-## Setup
+## 📦 Setup
 
 1. **Clone the project**
 
@@ -70,7 +75,7 @@ Simply type your questions or requests, and Bonk will provide intelligent, enthu
    CLAUDE_API_KEY=sk-ant-api03-your-actual-api-key-here
    ```
 
-    **Important**: Replace `sk-ant-api03-your-actual-api-key-here` with your real API key from Anthropic
+   ⚠️ **Important**: Replace `sk-ant-api03-your-actual-api-key-here` with your real API key from Anthropic
 
 5. **Create a `.gitignore` file** (to protect your API key)
 
@@ -87,7 +92,7 @@ Simply type your questions or requests, and Bonk will provide intelligent, enthu
 
 ---
 
-## API Key Setup Notes
+## 🔐 API Key Setup Notes
 
 - **Keep your API key secure** — Never commit your `.env` file to version control
 - **Add `.env` to `.gitignore`** — This prevents accidentally sharing your key
@@ -104,73 +109,56 @@ If you get an API error, double-check that:
 ## 📷 Preview
 
 ```bash
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                            @%%%#*+=====+*%%@@@@@@                                                  
-                          %%#+=====+========+#%@@%                                                  
-                        @%**+=+*#*============+#%@                                                  
-                       @#=+*==%#+===============*%                                                  
-                      @#==+*============++=======%@                              @##%@              
-                     @#+=============*#%%%#-======*@%                          @%*++*#%             
-                  @@%+==============-.........-=====*%@                      @%#*++++*%@            
-               @%%*===============-.............:-====#%                    %#*++++*#%              
-             @%#+================:.................-+%@@@@                @%*++++*#%                
-           @%*==================:............-:.....:+#%@@              @%#*+++*#@                  
-         @%*====================:............:=*+=-==+*%@              %#*+++*#%                    
-        @%+=====================-:...........:#%                     @%**++*#%@                     
-       @%+========================:..........:#@                  @@@#*++*##%%@@%#%@                
-      %%+==========================:.........:#@            @@%****%*++*#*======+*+%@               
-      @*================--==---:.............:*@            @#+#+##*+*#*+**+====**##%%@             
-     %%=================-....................:+@              %*#*+*##==---==========*%@            
-     @#==================.....................+@             @%*+*#*==:.....:-=========#@@          
-     %%==================:....................=@           @%#**#*===........:-=========*%@         
-     %%+==================....................+%          @#**#*====:.-*:.....:==========*%@        
-      @#==================-..................:+#        @%**#%@+===-..*=.......-==========#@        
-       %#==================-..............-+.:+#@@     @#*#%@ @%+++:.-*........-==========+%@       
-        @#+========*#*+=====-:...::::=+#@*:..-=*+=+#%%%**%     @@@%%#=.........:===========#@       
-         @%*=========+*======#*+++++=+*%%%+--==**==+###%@       @*:............:===========#%       
-           @%*=======+*+====+#============*+====##*#**++*%      %+.............-===========*%       
-             @%#+=====*+====+#=========+===**===+%*%%**##%     @%=.............-===========*%       
-                @%#*+=+*=====#+====+**#%%%#++*+===+*%@         %*:.............-===========*#       
-                     @%%#=====+#%%%@@      @%%%##**%%             .............-======              
-                         %*+*+#+%                                                                   
-                                                                                                    
-                                                                                                    
-                                                                                                    
+██████╗  ██████╗ ███╗   ██╗██╗  ██╗
+██╔══██╗██╔═══██╗████╗  ██║██║ ██╔╝
+██████╔╝██║   ██║██╔██╗ ██║█████╔╝ 
+██╔══██╗██║   ██║██║╚██╗██║██╔═██╗ 
+██████╔╝╚██████╔╝██║ ╚████║██║  ██╗
+╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝
+
+████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗     
+╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║     
+   ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║     
+   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║     
+   ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗
+   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
 
       Welcome to Bonk Terminal - Your AI Assistant
 
-Initializing modules...
-Bonk AI is warming up...
+✨ Initializing modules...
+🤖 Bonk AI is warming up...
 
-Bonk Terminal is now up and running!
-Start chatting with Bonk by typing your message.
+🚀 Bonk Terminal is now up and running!
+💬 Start chatting with Bonk by typing your message.
 
 [10:30:15] bonk > Hello Bonk, how are you today?
 
 Bonk:
- Hey there! I'm absolutely fantastic and ready to BONK it up! As your 
-passionate BONK-AI assistant, I'm here to help with anything you need while 
-spreading the $BONK love. What can we talk about today? When in doubt, BONK it out!
+💬 Hey there! I'm absolutely fantastic and ready to BONK it up! 🚀 As your 
+   passionate BONK-AI assistant, I'm here to help with anything you need while 
+   spreading the $BONK love. What can we talk about today? When in doubt, BONK it out! 🧡
+
+[10:30:45] bonk > /bonk
+
+🐕 *Displays beautiful BONK dog ASCII art in orange* 🧡
 ```
 
 ---
 
-## How It Works
+## 🔧 How It Works
 
 Bonk Terminal provides a direct interface to chat with BONK-AI, your passionate cryptocurrency-loving assistant. Simply:
 
-1. Start the terminal and enjoy the custom ASCII art
+1. Start the terminal and enjoy the orange ASCII banner
 2. Type your message or question about anything
 3. BONK-AI responds with enthusiastic, intelligent answers (and maybe some $BONK love!)
-4. Continue the conversation naturally with your energetic AI companion
+4. Use `/bonk` anytime to see awesome ASCII dog art 🐕
+5. Continue the conversation naturally with your energetic AI companion
 
 No complex switching or configuration needed - just pure AI conversation with a BONK-pilled twist!
 
 ---
 
-## License
+## 🧩 License
 
 MIT License — use it freely, fork it, contribute, and extend.

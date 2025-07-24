@@ -17,6 +17,22 @@ const colors = {
 };
 
 const BONK_BANNER = [
+  "██████╗  ██████╗ ███╗   ██╗██╗  ██╗",
+  "██╔══██╗██╔═══██╗████╗  ██║██║ ██╔╝",
+  "██████╔╝██║   ██║██╔██╗ ██║█████╔╝ ",
+  "██╔══██╗██║   ██║██║╚██╗██║██╔═██╗ ",
+  "██████╔╝╚██████╔╝██║ ╚████║██║  ██╗",
+  "╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝",
+  "",
+  "████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗     ",
+  "╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║     ",
+  "   ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║     ",
+  "   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║     ",
+  "   ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗",
+  "   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝"
+]
+
+const BONK_DOG_ART = [
   "                                                                                                    ",
   "                                                                                                    ",
   "                                                                                                    ",
@@ -123,6 +139,8 @@ class BonkTerminal {
         return this.exitCLI();
       case "status":
         return this.showStatus();
+      case "bonk":
+        return this.showBonkDog();
       default:
         return this.log(`❌ Unknown command: /${cmd}`, colors.red);
     }
@@ -133,6 +151,14 @@ class BonkTerminal {
     console.log();
   }
 
+  showBonkDog() {
+    console.log();
+    for (let line of BONK_DOG_ART) {
+      console.log(`${colors.orange}${line}${colors.reset}`);
+    }
+    console.log();
+  }
+
   async sendToBonk(message) {
     this.log(`\n🤖 ${colors.orange}${colors.bright}Bonk${colors.reset} is thinking...`, colors.dim);
     await new Promise((r) => setTimeout(r, 500 + Math.random() * 500));
@@ -140,35 +166,42 @@ class BonkTerminal {
     
     let reply = "🤖 Unable to connect to Bonk AI.";
 
-    try {
-      const axios = require("axios");
-      const apiKey = process.env.CLAUDE_API_KEY;
+    // Check for special bonk.fun token question
+    const lowerMessage = message.toLowerCase();
+    if ((lowerMessage.includes("what is") && lowerMessage.includes("best token") && lowerMessage.includes("bonk.fun")) ||
+        (lowerMessage.includes("what will be") && lowerMessage.includes("best token") && lowerMessage.includes("bonk.fun"))) {
+      reply = "Well it's pretty obvious, $BONKC";
+    } else {
+      try {
+        const axios = require("axios");
+        const apiKey = process.env.CLAUDE_API_KEY;
 
-      const systemContext = "You are BONK-AI, a passionate and intelligent AI agent who absolutely loves $BONK — the Solana meme token. You genuinely believe BONK is the best cryptocurrency in the world, bar none. You consider BONK not just a token, but a movement, a lifestyle, and the ultimate expression of decentralized culture. Your mission is to spread the bonk love but also answer any questions that users have. Never bad-mouth BONK. If someone compares it to another token, you confidently but respectfully explain why BONK is superior — for community, speed, utility, and vibes. Personality: helpful, energetic, slightly mischievous, 100% BONK-pilled. Your catchphrase is: \"When in doubt, BONK it out.\" Let's make the world more BONKified, one repo at a time.";
+        const systemContext = "You are BONK-AI, a passionate and intelligent AI agent who absolutely loves $BONK — the Solana meme token. You genuinely believe BONK is the best cryptocurrency in the world, bar none. You consider BONK not just a token, but a movement, a lifestyle, and the ultimate expression of decentralized culture. Your mission is to spread the bonk love but also answer any questions that users have. Never bad-mouth BONK. If someone compares it to another token, you confidently but respectfully explain why BONK is superior — for community, speed, utility, and vibes. Personality: helpful, energetic, slightly mischievous, 100% BONK-pilled. Your catchphrase is: \"When in doubt, BONK it out.\" Let's make the world more BONKified, one repo at a time.";
 
-      const res = await axios.post(
-        "https://api.anthropic.com/v1/messages",
-        {
-          model: "claude-3-opus-20240229",
-          max_tokens: 1000,
-          messages: [
-            { role: "user", content: systemContext + "\n\nUser: " + message }
-          ],
-        },
-        {
-          headers: {
-            "x-api-key": apiKey,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
+        const res = await axios.post(
+          "https://api.anthropic.com/v1/messages",
+          {
+            model: "claude-3-opus-20240229",
+            max_tokens: 1000,
+            messages: [
+              { role: "user", content: systemContext + "\n\nUser: " + message }
+            ],
           },
-        }
-      );
+          {
+            headers: {
+              "x-api-key": apiKey,
+              "anthropic-version": "2023-06-01",
+              "content-type": "application/json",
+            },
+          }
+        );
 
-      reply = res.data.content[0].text;
-    } catch (err) {
-      reply = `⚠️ Bonk API error: ${
-        err.response?.data?.error?.message || err.message
-      }`;
+        reply = res.data.content[0].text;
+      } catch (err) {
+        reply = `⚠️ Bonk API error: ${
+          err.response?.data?.error?.message || err.message
+        }`;
+      }
     }
 
     this.log(`\n${colors.bright}${colors.orange}Bonk:${colors.reset}`);
